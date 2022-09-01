@@ -1,18 +1,21 @@
 import React from "react";
-import MapFramed from "./assets/MapFrame.png";
-import GalleryFramed from "./assets/GalleryFrame.png";
+
 import "./App.css";
+
 import { Link } from "react-router-dom";
+import HeavenlyGallery from "./HeavenlyGallery";
+import BaroqueMap from "./BaroqueMap";
+import TheMetApp from "./TheMetApp";
+import ButtonPremium from "./ButtonPremium";
 
 function App() {
   return (
-    <div className="appBody font-face-gm">
+    <div className="appBody">
       <h1>Portfolio</h1>
-      <img src={GalleryFramed} alt="Galleriebild mit Rahmen" />
-      <h2>...in heaven</h2>
-
-      <img src={MapFramed} alt="Kartenbild mit Rahmen" />
-      <h2>...on earth</h2>
+      <HeavenlyGallery />
+      <BaroqueMap />
+      <TheMetApp />
+      <ButtonPremium />
     </div>
   );
 }
