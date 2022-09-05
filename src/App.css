@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 .font-face-gm {
   font-family: "DO Stylish Baroque";
 }
@@ -13,12 +14,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* place-items: center; */
-  min-width: 100vh;
-  min-height: 100vh;
+  max-width: 100%;
   background-color: #242424;
-
-  /* text-align: center; */
 }
 
 h1 {
@@ -29,30 +26,31 @@ h1 {
   font-family: "DO Stylish Baroque", sans-serif;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.6em;
   font-family: "DO Stylish Baroque", sans-serif;
 }
 
-img {
+.portfolio-element img {
   margin: 0.2em;
+  width: 120vh;
 }
 
-.loading {
-  font-family: "Helvetica", sans-serif;
-  display: flex;
-  justify-content: center;
-}
 .portfolio-element {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 20px;
+  margin: 1em 4em 1em 4.2em;
 }
 .metapp {
   display: flex;
   flex-direction: row;
+  margin-top: 4em;
+}
+
+.metapp img {
+  width: 70vh;
 }
 .desc {
   border: 1em solid #edb144;
@@ -68,12 +66,12 @@ img {
 
 .button-premium a {
   position: relative;
-  padding: 20px 50px;
+  padding: 2.5vh 6vh;
   display: flex;
   justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 100px;
+  max-width: 12vh;
   overflow: hidden;
   border-radius: 40px;
   border-top: solid #cb8c46 0.15em;
@@ -82,10 +80,9 @@ img {
 .button-premium a span {
   position: relative;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: bold;
   font-family: Arial;
-
   letter-spacing: 8px;
   z-index: 1;
 }
@@ -97,8 +94,6 @@ img {
   width: 200px;
   height: 200px;
   background: #cb8c46;
-
-  /* box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); */
   transition: 0.9s;
 }
 
@@ -142,4 +137,203 @@ img {
 .button-container {
   display: flex;
   justify-content: space-around;
+}
+.sidebar {
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  background-color: #242424;
+  z-index: 1;
+}
+.sidebar img {
+  margin: 0;
+}
+
+.icon {
+  width: 7vh;
+  filter: invert(82%) sepia(33%) saturate(2436%) hue-rotate(325deg)
+    brightness(86%) contrast(83%);
+}
+.icon:hover {
+  filter: invert(99%) sepia(6%) saturate(247%) hue-rotate(268deg)
+    brightness(110%) contrast(77%);
+}
+@media only screen and (max-width: 480px) {
+  .appBody {
+    margin-bottom: 12%;
+  }
+  h1 {
+    font-size: 4.7em;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .portfolio-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0.5em 2em 0.5em 2.1em;
+  }
+  .portfolio-element img {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .metapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  .metapp h2 {
+    text-align: center;
+  }
+
+  .metapp img {
+    width: 100%;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vh;
+  }
+  .button-premium a {
+    padding: 2vh 8vh;
+    max-width: 7vh;
+    border-top: solid #cb8c46 0.15em;
+  }
+
+  .button-premium a span {
+    font-size: 1em;
+    letter-spacing: 8px;
+  }
+
+  .button-premium a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #cb8c46;
+  }
+  .sidebar {
+    min-width: 100%;
+    max-height: 8%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .appBody {
+    margin-bottom: 12%;
+  }
+  h1 {
+    font-size: 4.7em;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .portfolio-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0.5em 2em 0.5em 2.1em;
+  }
+  .portfolio-element img {
+    width: 100%;
+  }
+  .metapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  .metapp h2 {
+    text-align: center;
+  }
+
+  .metapp img {
+    width: 90%;
+    padding: 0;
+    margin-top: 1em;
+  }
+
+  .button-premium a {
+    padding: 3vh 9vh;
+    max-width: 7vh;
+    border-top: solid #cb8c46 0.15em;
+  }
+
+  .button-premium a span {
+    font-size: 1em;
+    letter-spacing: 8px;
+    z-index: 1;
+  }
+
+  .button-premium a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #cb8c46;
+  }
+  .sidebar {
+    min-width: 100%;
+    max-height: 8%;
+    padding-top: 1%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+  }
+}
+.title-div {
+  /* margin: 2vh 0 7vh 0; */
+  display: flex;
+  justify-content: center;
+}
+.title-div svg {
+  max-height: 1vh;
+}
+#container {
+  position: absolute;
+  /* margin: 5vw; */
+  /* max-width: 100%; */
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+
+  font-family: "DO Stylish Baroque", sans-serif;
+  font-size: 80pt;
+
+  text-align: center;
+
+  user-select: none;
 }

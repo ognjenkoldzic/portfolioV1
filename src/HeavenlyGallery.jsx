@@ -12,10 +12,10 @@ function HeavenlyGallery() {
 
       <div className="desc">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-          veritatis placeat, sint sequi quasi enim, dignissimos itaque illo quae
-          consequuntur nisi atque accusantium numquam at consequatur quisquam
-          odit hic! Aliquid!
+          The Heavenly Gallery is a 3D-project coded with React Three Fiber. You
+          can zoom into the scene, look at it from different perspectives and
+          interact with the elements. Even the piano plays Bach (sometimes you
+          need a bit of patience for the loading process, though :-)).
         </p>
         <div className="button-container">
           <ButtonPremium

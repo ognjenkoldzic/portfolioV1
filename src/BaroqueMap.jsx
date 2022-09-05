@@ -12,10 +12,11 @@ function BaroqueMap() {
       <h2>The Baroque Map</h2>
       <div className="desc">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-          veritatis placeat, sint sequi quasi enim, dignissimos itaque illo quae
-          consequuntur nisi atque accusantium numquam at consequatur quisquam
-          odit hic! Aliquid!
+          The Baroque Map is a full stack project with React Leaflet,
+          Express.js, Mongo DB and Cloudinary. You can navigate on the map an
+          add and remove baroque venues in your city (or somewhere else) and
+          post a picture of it. This project is still “work in progress”, so it
+          will maybe have changed if you visit it again in a few weeks.
         </p>
         <div className="button-container">
           <ButtonPremium

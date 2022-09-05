@@ -12,10 +12,12 @@ function TheMetApp() {
         <h2>The MET App</h2>
         <div className="desc">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-            veritatis placeat, sint sequi quasi enim, dignissimos itaque illo
-            quae consequuntur nisi atque accusantium numquam at consequatur
-            quisquam odit hic! Aliquid!
+            The Met App is a pure frontend React app. I fetched the API of the
+            Metropolitan Museum of Arts in New York. You can browse through the
+            section of European Paintings, search for specific ones, check the
+            details of every art work, bookmark the paintings you like, play
+            memory with some of the paintings and answer questions of the art
+            quiz.
           </p>
           <div className="button-container">
             <ButtonPremium
