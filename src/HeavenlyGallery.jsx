@@ -5,7 +5,7 @@ import ButtonPremium from "./ButtonPremium";
 function HeavenlyGallery() {
   return (
     <div className="portfolio-element gallery">
-      <a href="https://gallery-solo.vercel.app/">
+      <a href="https://gallery-solo.vercel.app/" target="_blank">
         <img src={GalleryFramed} alt="Galleriebild mit Rahmen" />
       </a>
       <h2>The Heavnely Gallery</h2>

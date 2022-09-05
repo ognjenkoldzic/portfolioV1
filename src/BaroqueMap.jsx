@@ -5,7 +5,7 @@ import ButtonPremium from "./ButtonPremium";
 function BaroqueMap() {
   return (
     <div className="portfolio-element map">
-      <a href="https://leaflet-test-ashy.vercel.app/">
+      <a href="https://leaflet-test-ashy.vercel.app/" target="_blank">
         {" "}
         <img src={MapFramed} alt="Kartenbild mit Rahmen" />
       </a>

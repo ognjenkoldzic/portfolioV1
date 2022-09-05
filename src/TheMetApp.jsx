@@ -5,7 +5,7 @@ import ButtonPremium from "./ButtonPremium";
 function TheMetApp() {
   return (
     <div className="portfolio-element metapp">
-      <a href="https://capestone-project.vercel.app/">
+      <a href="https://capestone-project.vercel.app/" target="_blank">
         <img src={MetFramed} alt="The Met mit Rahmen" />
       </a>
       <div>

@@ -7,12 +7,12 @@ function MiniNav() {
   return (
     <div className="sidebar">
       <div className="logo-linkedin">
-        <a href="https://www.linkedin.com/in/ognjenkoldzic/">
+        <a href="https://www.linkedin.com/in/ognjenkoldzic/" target="_blank">
           <img className="icon" src={linkedinLogo} alt="GitHub Logo" />
         </a>
       </div>
       <div className="logo-github">
-        <a href="https://github.com/ognjenkoldzic">
+        <a href="https://github.com/ognjenkoldzic" target="_blank">
           <img className="icon" src={githubLogo} alt="linkedin logo" />
         </a>
       </div>
